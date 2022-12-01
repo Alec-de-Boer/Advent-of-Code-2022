@@ -42,7 +42,11 @@ int main()
                 }
                 inputFile.close();
             }
-            else std::cout << "Unable to open file" << std::endl;
+            else
+            {
+                std::cout << "Unable to open file" << std::endl;
+                break;
+            }
             std::cout << "The largest number was: " << y << std::endl;
             break;
         }
@@ -80,17 +84,22 @@ int main()
                             {
                                 secondNumber = currentNumber;
                             }
+
+                            //rotate numbers if the current number is higher than the current top 3.
                             if (currentNumber > firstNumber)
                             {
                                 lastNumber = secondNumber;
                                 secondNumber = firstNumber;
                                 firstNumber = currentNumber;
                             }
+
+                            //rotate numbers if the current number is higher than the current second and third.
                             else if (currentNumber > secondNumber)
                             {
                                 lastNumber = secondNumber;
                                 secondNumber = currentNumber;
                             }
+
                             else
                             {
                                 lastNumber = currentNumber;
