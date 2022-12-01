@@ -25,17 +25,14 @@ int main()
             {
                 while (getline (inputFile,line))
                 {
-                    std::cout << line;
                     if (!line.empty())
                     {
                         int i = std::stoi(line);
                         int z = x + i;
                         x = z;
-                        std::cout << "Not empty: total so far: " << x << std::endl << std::endl;
                     }
                     else
                     {
-                        std::cout << "This one is empty, total was: " << x << std::endl << std::endl;
                         if(x > y)
                         {
                             y = x;
@@ -64,17 +61,14 @@ int main()
             {
                 while (getline (inputFile,line))
                 {
-                    std::cout << line;
                     if (!line.empty())
                     {
                         int i = std::stoi(line);
                         int z = currentNumber + i;
                         currentNumber = z;
-                        std::cout << "Not empty: total so far: " << currentNumber << std::endl << std::endl;
                     }
                     else
                     {
-                        std::cout << "This one is empty, total was: " << currentNumber << std::endl << std::endl;
                         if(currentNumber > lastNumber)
                         {
                             //check if any values are empty and fill them first.
