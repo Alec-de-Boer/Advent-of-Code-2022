@@ -139,4 +139,6 @@ discord.xml
 modules.xml
 vcs.xml
 AOC1.iml
+
+.idea
 /CMakeLists.txt
